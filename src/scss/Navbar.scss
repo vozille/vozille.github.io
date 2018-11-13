@@ -1,0 +1,33 @@
+@import 'constants.scss';
+
+.navbar-div {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: $navbar-background-color;
+}
+
+.navbar-tab {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  object-fit: cover;
+  text-align: center;
+  font-size: 24px;
+  color: ivory;
+}
+
+%navbar-tab-cells {
+  padding: 10px;
+}
+
+.navbar-tab-border-cells {
+  @extend %navbar-tab-cells;
+}
+
+.navbar-tab-interior-cells {
+  @extend %navbar-tab-cells;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}

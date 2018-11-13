@@ -1,23 +1,26 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div>
+    <div>
+      <navbar-side></navbar-side>
+    </div>
+    <div id="app" class="app">
+      <router-view />
+    </div>
   </div>
+  
 </template>
 
 <script>
+import navbar from "@/components/Navbar";
+import "bootstrap";
 export default {
-  name: 'App'
-}
+  name: "App",
+  components: {
+    "navbar-side": navbar
+  }
+};
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import "./scss/App.scss";
 </style>

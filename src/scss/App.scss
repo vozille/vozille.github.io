@@ -1,3 +1,13 @@
+@import "constants.scss";
+
+.app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+  background: $site-background-color;
+}
+
 /*!
  * Start Bootstrap - Resume v5.0.2 (https://startbootstrap.com/template-overviews/resume)
  * Copyright 2013-2018 Start Bootstrap
