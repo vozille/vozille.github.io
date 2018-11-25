@@ -1,4 +1,10 @@
 // colors
 
 $site-background-color: #ffffff;
-$navbar-background-color: black;
+$navbar-background-gradient-dark: #202021;
+$navbar-background-gradient-light: #5f5f5f;
+
+
+.clickable {
+  cursor: pointer;
+}

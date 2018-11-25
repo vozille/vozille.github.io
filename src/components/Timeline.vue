@@ -32,10 +32,13 @@
 
 <script>
 var moment = require("moment");
+import Skills from './SkillSet'
 export default {
   name: "Timeline",
+  components: {
+    Skills
+  },
   created: function() {
-    this.AddActivity();
   },
   data() {
     return {
@@ -69,9 +72,6 @@ export default {
   methods: {
     Moment: function(data) {
       return moment(data);
-    },
-    AddActivity: function() {
-      this.timeline[0].Activities.push("foo");
     },
     ShowActivity: function(idx) {
       this.timeline[idx].ShowActivity = true;
