@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HomeComponent from '@/components/Home'
 import AboutComponent from '@/components/About'
-import TimelineComponent from '@/components/Timeline'
+import DateMeComponent from '@/components/DateMe'
 import SkillComponent from '@/components/SkillSet'
 
 Vue.use(Router)
@@ -15,23 +15,15 @@ export default new Router({
       component: HomeComponent
     },
     {
-      path: '/blog',
-      name: 'blog',
-      component: AboutComponent,
-      props: (route) => ({
-        akash: route.query
-      })
-    },
-    {
-      path: '/timeline',
+      path: '/dateme',
       name: 'Timeline',
-      component: TimelineComponent,
+      component: DateMeComponent,
       props: (route) => ({
         limit: route.query.limit
       })
     },
     {
-      path: '/skills',
+      path: '/hireme',
       name: 'SkillSet',
       component: SkillComponent
     }

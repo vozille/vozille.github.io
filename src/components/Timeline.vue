@@ -1,29 +1,38 @@
 <template>
     <!-- timeline card template -->
   <div>
-      <div v-for="(item, idx) in timeline" v-bind:key='idx'>
+      <h2 style="text-align:center">
+        Timeline
+      </h2>
+
+      <div class="timeline-main" v-for="(item, idx) in timeline" v-bind:key='idx'>
         <div class="container mt-5 mb-5">
           <div class="row">
-            <div class="col-md-8 timeline-heading">
+            <div class="timeline-heading">
               {{item.Title}}
             </div>
-            <div class="col-md-4 timeline-heading" v-if="item.EndDate">
+          </div>
+          <div class="row">
+            <div class="timeline-sub-heading-1">
+              {{item.Organisation}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="timeline-sub-heading-2" v-if="item.EndDate">
               {{Moment(item.StartDate).format('YYYY-MMM')}} - {{Moment(item.EndDate).format('YYYY-MMM')}}
             </div>
-            <div class="col-md-4 timeline-heading" v-else>
+            <div class="timeline-sub-heading-2" v-else>
               {{Moment(item.StartDate).format('YYYY-MMM')}} - Present
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 offset-md-3">
-              <ul class="timeline">
-                <li v-for="(activity,idx2) in item.Activities" v-bind:key="idx2">
-                  <transition name="list">
-                    <p>{{activity}}</p>
-                  </transition>
-                </li>
-              </ul>
-            </div>
+            <ul class="timeline">
+              <li v-for="(activity,idx2) in item.Activities" v-bind:key="idx2">
+                <transition name="list">
+                  <p>{{activity}}</p>
+                </transition>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -32,33 +41,29 @@
 
 <script>
 var moment = require("moment");
-import Skills from './SkillSet'
 export default {
   name: "Timeline",
-  components: {
-    Skills
-  },
-  created: function() {
-  },
+  created: function() {},
   data() {
     return {
       timeline: [
         {
           StartDate: "2017-06-01",
           EndDate: null,
+          Organisation: "NowFloats",
           Title: "Software Engineer",
           ShowActivity: false,
           Activities: [
-            "Worked as backend engineer",
-            "Worked as front end engineer",
-            "Worked as ops",
-            "Worked as data entry operator",
-            "Worked as cloud engineer"
+            "Member of the core back-end team, responsible for creation, deployment and optimization of API's and services",
+            "Built partner management system using Vue, .Net Core , MongoDB and PostgreSQL. Features included purchasing and redeeming products, automated commissions as well as renewal and revenue cohorts",
+            "Built a customer engagement platform for sales using AWS, MongoDB and Vue. This led to a 50% increase in renewal rates",
+            "Modularisation and Migration of core API's to dotnet core and AWS ECS and lambda, which lead to 70% reduction in hosting costs"
           ]
         },
         {
           StartDate: "2013-07-01",
           EndDate: "2017-05-15",
+          Organisation: "CETB",
           Title: "Aspiring Engineer",
           ShowActivity: false,
           Activities: [
@@ -85,6 +90,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../scss/Timeline.scss";
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "~bootstrap/scss/bootstrap";
 </style>
 

@@ -32,7 +32,6 @@
 </template>
 
 <script>
-import { test_mixin } from "./Mixins.js";
 import cards from "@/components/DescriptionCards";
 export default {
   name: "Home",
@@ -42,7 +41,6 @@ export default {
       msg: "Welcome to Your Vue.js App"
     };
   },
-  mixins: [test_mixin],
   methods: {
     show_more_data: function() {
       this.show_more_data = true;

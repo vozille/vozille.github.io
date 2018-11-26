@@ -2,7 +2,7 @@
     <div class="navbar-div">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Clarence Taylor</span>
+        <span class="d-block d-lg-none">Anwesh Mohanty</span>
         <span class="d-none d-lg-block">
           <img class="img-profile" src="https://scontent-sin6-1.cdninstagram.com/vp/b51791f732e2023370146f529d31ccfd/5C7252AC/t51.2885-15/e35/42116866_1632851330154845_8463874381676158446_n.jpg" alt="">
         </span>
@@ -16,10 +16,10 @@
             <a class="nav-link clickable" v-on:click="$router.push('/')">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link clickable" v-on:click="$router.push('/timeline')">Timeline</a>
+            <a class="nav-link clickable" v-on:click="$router.push('/hireme')">Hire Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link clickable" v-on:click="$router.push('/skills')">Skills</a>
+            <a class="nav-link clickable" v-on:click="$router.push('/dateme')">Date Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link clickable">Interests</a>
