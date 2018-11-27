@@ -9,6 +9,7 @@
     "start": "npm run dev",
     "build": "node build/build.js",
     "deploy": "gh-pages -d ./dist",
+    "move-to-master": "git checkout master && git checkout production -- ./dist/ .",
     "publish-github": "npm run build && npm run deploy"
   },
   "dependencies": {
