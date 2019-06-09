@@ -1,17 +1,12 @@
 <template>
   <div>
     <div class="container-fluid">
-
-      <section class="introduction" id="about">
+      <section class="introduction">
         <div class="my-auto">
-          <h1 class="mb-0">
-            Anwesh Mohanty
-          </h1>
-          <div class="subheading mb-5">Silicon Valley, Madhapur, Hyderabad
-            <a href="mailto:anwesh063@gmail.com">anwesh063@gmail.com</a>
-          </div>
-          <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-          <div class="social-icons">
+          <h1 class="mb-0">Anwesh Mohanty</h1>
+          <div class="subheading mb-5">Software Enginner, Musician, Forever Curious</div>
+
+          <!-- <div class="social-icons">
             <a href="#">
               <i class="fab fa-linkedin-in"></i>
             </a>
@@ -24,7 +19,7 @@
             <a href="#">
               <i class="fab fa-facebook-f"></i>
             </a>
-          </div>
+          </div>-->
         </div>
       </section>
     </div>

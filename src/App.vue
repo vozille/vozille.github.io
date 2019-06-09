@@ -4,10 +4,9 @@
       <navbar-side></navbar-side>
     </div>
     <div id="app" class="app">
-      <router-view />
+      <router-view/>
     </div>
   </div>
-  
 </template>
 
 <script>
