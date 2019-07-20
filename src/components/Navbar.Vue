@@ -1,6 +1,6 @@
 <template>
   <div class="navbar-div">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-transparent">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-transparent">
       <button
         class="navbar-toggler"
         type="button"
