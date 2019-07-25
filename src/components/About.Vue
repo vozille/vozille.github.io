@@ -1,12 +1,10 @@
 <template>
+  <div>
+    <div class="col-md-3">{{message}}</div>
     <div>
-        <div class="col-md-3">
-            {{message}}
-        </div>
-        <div>
-            <button></button>
-        </div>
+      <button></button>
     </div>
+  </div>
 </template>
 
 <script>
@@ -24,7 +22,7 @@ export default {
     }
   },
   props: {
-    akash: Object
+    foo: Object
   }
 };
 </script>

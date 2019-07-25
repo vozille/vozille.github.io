@@ -1,10 +1,10 @@
 <template>
   <div>
     <div>
-      <navbar-side></navbar-side>
+      <navbar-top></navbar-top>
     </div>
     <div id="app" class="app">
-      <router-view/>
+      <router-view />
     </div>
   </div>
 </template>
@@ -15,7 +15,7 @@ import "bootstrap";
 export default {
   name: "App",
   components: {
-    "navbar-side": navbar
+    "navbar-top": navbar
   }
 };
 </script>
