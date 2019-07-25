@@ -64,6 +64,13 @@ import cards from "@/components/DescriptionCards";
 import Typed from "typed.js";
 export default {
   name: "Home",
+  created: function() {
+    var header = $("body");
+    header.css(
+      "background-image",
+      'url("https://raw.githubusercontent.com/vozille/vozille.github.io/master/static/img/wallpaper.317e462.png")'
+    );
+  },
   mounted: function() {
     var options = {
       stringsElement: "#typed-strings",
