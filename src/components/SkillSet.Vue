@@ -104,7 +104,7 @@ export default {
     var header = $("body");
     header.css(
       "background-image",
-      'url("https://raw.githubusercontent.com/vozille/vozille.github.io/production/src/assets/background-2.jpeg")'
+      'url("https://raw.githubusercontent.com/vozille/vozille.github.io/production/src/assets/background-2.jpg")'
     );
   },
   mixins: [basic_utilities]
