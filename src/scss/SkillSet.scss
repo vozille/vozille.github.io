@@ -11,6 +11,52 @@
   color: white;
 }
 
+.button-resume {
+  background-color: $button-resume-color;
+  color: white;
+}
+
 body {
   background-image: url("https://raw.githubusercontent.com/vozille/vozille.github.io/production/src/assets/date.jpg")
+}
+
+@media (min-width: 768px) {
+  footer {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+  }
+}
+
+
+.dev-icons {
+  font-size: 32px;
+}
+
+.dev-icons .list-inline-item :hover {
+  color: #2c8fb5;
+}
+
+@media (min-width: 768px) {
+  #skills {
+    text-align: left;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  #skills {
+    text-align: left;
+    margin-left: 5%;
+  }
 }

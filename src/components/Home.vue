@@ -68,7 +68,7 @@ export default {
     var header = $("body");
     header.css(
       "background-image",
-      'url("https://raw.githubusercontent.com/vozille/vozille.github.io/production/src/assets/wallpaper.png")'
+      'url("https://images.unsplash.com/photo-1455459182396-ae46100617cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80")'
     );
   },
   mounted: function() {
