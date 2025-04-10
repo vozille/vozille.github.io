@@ -1,9 +1,10 @@
 <template>
   <div>
-    Hi sweetheart, I was too lazy to make this page. Click to:
+    <s>Hi sweetheart, I was too lazy to make this page. Click to: </s>
     <div>
-      <a style="color:white" href="https://www.instagram.com/__anwesh__/">Send a Hi on Instagram</a>
+      <a style="color:white" href=""><s>Send a Hi on Instagram</s></a>
     </div>
+    Update: Married to the most beautiful woman in the world.
   </div>
 </template>
 
